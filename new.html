@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+
+
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+   <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+</head>
+<body>
+
+
+<div class="parent">
+	
+<div class="row">
+<div class="col-7">
+	
+<div id="tabs" style="">
+
+  <ul>
+    <li><a href="#tabs-1">Login</a></li>
+    <li><a href="#tabs-2">Register</a></li>
+  </ul>
+
+  <!-- singin -->
+  <div id="tabs-1">
+    <form>
+		<input type="email" name="emaill" placeholder="Enter your Emaill"><br><br><br>
+    	<input type="password" name="password1" placeholder="Enter your password"><br><br><br>
+    	<button>Submit</button><br><br>
+    </form>
+  </div>
+
+  <!-- singnup -->
+  <div id="tabs-2">
+    <form action="connect.php" method="POST" enctype='multipart/form-data'>
+    	<input type="text" name="first" placeholder="Enter your first Name"><br><br><br>
+    	<input type="text" name="last" placeholder="Enter your last Name"><br><br><br>
+    	<input type="email" name="email" placeholder="Enter your Email"><br><br><br>
+    	<input type="file" name="image"><br><br><br>
+    	<input type="password" name="password1" placeholder="Enter your password"><br><br><br>
+    	<input type="password" name="password2" placeholder="confirm password"><br><br><br>
+    	<select name="club">
+    		<option selected="True" disabled>Select Club</option>
+    		<option>Cultural Club</option>
+    		<option>Programming Club</option>
+    		<option>Mechatronics Club</option>
+    		<option>Living and Welfare Club</option>
+    	</select><br><br><br>
+
+    	  <input type="checkbox" name="event[]" value="mumbai">Mumbai
+  		  <input type="checkbox" name="event[]" value="pune">Pune
+  		  <input type="checkbox" name="event[]" value="banglore">Banglore
+  		  <input type="checkbox" name="event[]" value="hyderabad">Hyderabad
+  		  <br><br><br>
+
+    	<button>Submit</button><br><br><br>
+    </form>
+  </div>
+
+</div>
+</div>
+<!-- first col -->
+
+<div class="col-4 ">
+	<img src="sa.jpeg" height="800px" width="610px">
+</div>
+
+
+
+
+	
+</div>
+<!-- row -->
+</div>
+<!-- container -->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+
+
+</body>
+</html>
